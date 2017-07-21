@@ -79,3 +79,17 @@ Allowing programmers to share and connect code together is a benefit of function
 
 Solution
 --------
+#Agrega una funcion aqui (antes de la funcion existente)
+def list_benefits():
+    lista = ["Código más organizado", "Código más facil de leer", "Reuso de código más fácil", "Permitir a los programadores compartir código y compartirlo"]
+    return lista    
+
+def build_sentence(info):
+    return "%s es el beneficio de una funcion!"%(info)
+
+def name_the_benefits_of_functions():
+    list_of_benefits = list_benefits()
+    for benefit in list_of_benefits:
+        print build_sentence(benefit)
+
+name_the_benefits_of_functions()
